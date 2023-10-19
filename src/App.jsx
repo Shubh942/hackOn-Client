@@ -1,6 +1,6 @@
 import "./App.scss";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home, Error, Login, Signup } from "./pages/index";
+import { Home, Error, Browse, Login, Signup } from "./pages/index";
 // import { ProtectedRoute, UserSignedIn } from "./helpers";
 
 import useAuthListener from "./hooks";
@@ -29,6 +29,7 @@ const App = () => {
               </UserSignedIn>
             }
           /> */}
+          <Route path="/browse" element={<Browse />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </Router>
