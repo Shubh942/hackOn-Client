@@ -10,7 +10,7 @@ export const bannerMovieRequests = {
 export const mediaRequests = [
   {
     rowId: 1,
-    category: "NETFLIX ORIGINALS",
+    category: "PRIME ORIGINALS",
     type: "tv",
     url: `/discover/tv?api_key=${API_KEY}&with_networks=213`,
   },

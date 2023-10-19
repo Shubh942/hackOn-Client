@@ -1,20 +1,36 @@
 import "./App.scss";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home, Error, Login, Signup } from "./pages/index";
-import { Navbar, Footer } from "./components/index";
+// import { ProtectedRoute, UserSignedIn } from "./helpers";
+
+import useAuthListener from "./hooks";
 
 const App = () => {
+  const { user } = useAuthListener();
+
   return (
     <div className="App">
       <Router>
-        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
+          {/* <Route
+            path="/login"
+            element={
+              <UserSignedIn user={user}>
+                <Login />
+              </UserSignedIn>
+            }
+          />
+          <Route
+            path="/signup"
+            element={
+              <UserSignedIn user={user}>
+                <Signup />
+              </UserSignedIn>
+            }
+          /> */}
           <Route path="*" element={<Error />} />
         </Routes>
-        <Footer />
       </Router>
     </div>
   );

@@ -1,7 +1,16 @@
+import "./Home.scss";
+
+import { Footer } from "../../components";
+
 const Home = () => {
   return (
     <div>
-      <h1>Home</h1>
+      <div className="accordionContainer">
+        <div className="inner">
+          <h1 className="title">Frequently Asked Questions</h1>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 };
