@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "header": "What is Fire-TV?",
+    "body": "Amazon Fire TV is a line of digital media players and smart TV devices designed to stream content and provide access to various streaming services and apps."
+  },
+  {
+    "id": 2,
+    "header": "How does Fire-TV work",
+    "body": "Amazon Fire TV is a device that connects to your TV, enabling you to stream content from various apps and services. It works by connecting to your home Wi-Fi network and providing access to a wide range of digital media."
+  },
+  {
+    "id": 3,
+    "header": "Which streaming services are available on Amazon Fire TV?",
+    "body": "Amazon Fire TV supports popular streaming services like Netflix, Amazon Prime Video, Hulu, Disney+, and more. You can access these services by downloading their respective apps from the Amazon Appstore."
+  },
+  {
+    "id": 4,
+    "header": "Can I use Amazon Fire TV with my existing TV, or do I need a smart TV?",
+    "body": "You can use Amazon Fire TV with any television, whether it's a smart TV or a traditional one. Fire TV devices turn any TV into a smart TV by providing access to streaming services and apps."
+  },
+  {
+    "id": 5,
+    "header": "How can I control Amazon Fire TV, and does it support voice control",
+    "body": "You can control Amazon Fire TV using the included remote control, mobile app, or voice commands. Many Fire TV devices offer voice control through Amazon Alexa, allowing you to search for content, adjust settings, and control compatible smart home devices using your voice."
+  },
+  {
+    "id": 6,
+    "header": "Do I need an Amazon Prime subscription to use Amazon Fire TV",
+    "body": "No, you do not need an Amazon Prime subscription to use Amazon Fire TV. While Amazon Prime Video is one of the available streaming services, you can use Fire TV with various other services without an Amazon Prime subscription."
+  },
+  {
+    "id": 7,
+    "header": "How do I set up parental controls on Amazon Fire TV?",
+    "body": "You can set up parental controls on Amazon Fire TV to restrict content by going to the settings menu and configuring parental controls. This allows you to restrict access to specific content based on ratings and categories."
+  }
+]
