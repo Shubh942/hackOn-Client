@@ -1,0 +1,39 @@
+.streampage {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(54, 47, 42, 0.35),
+      rgba(85, 50, 20, 0.35)
+    ),
+    url("../../../public/images/misc/back.png");
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  height: 100vh;
+
+  .main-content {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    form {
+      margin: 30px 0;
+      .input-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+      }
+
+      .btn-cta-stream {
+        padding: 12px 16px;
+        background: #ff9900 !important;
+        border-radius: 5px;
+      }
+    }
+
+    input {
+      padding: 8px 8px;
+    }
+  }
+}

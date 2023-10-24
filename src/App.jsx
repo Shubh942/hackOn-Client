@@ -1,48 +1,35 @@
-import "./App.scss";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home, Error, Browse } from "./pages/index";
-// import { ProtectedRoute, UserSignedIn } from "./helpers";
+import * as ROUTES from "./constants/routes";
+import SignIn from "./components/signInPage/SignInPage";
+import SignUp from "./components/signUpPage/SignUpPage";
+import HomePage from "./components/homePage/HomePage";
+import BrowsePage from "./components/browsePage/BrowserPage";
+import Room from "./components/Stream/Room";
+import Stream from "./components/Stream/Stream";
+import Cart from "./components/Cart/Cart";
 
-// import useAuthListener from "./hooks";
+import { ProtectedRoute, UserSignedIn } from "./helpers";
 
-const App = () => {
-  // const { user } = useAuthListener();
+import useAuthListener from "./hooks";
+
+function App() {
+  const { user } = useAuthListener();
 
   return (
-    <div className="App">
+    <div className="app">
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
-          {/* <Route
-            path="/login"
-            element={
-              <UserSignedIn user={user}>
-                <Login />
-              </UserSignedIn>
-            }
-          />
-          <Route
-            path="/signup"
-            element={
-              <UserSignedIn user={user}>
-                <Signup />
-              </UserSignedIn>
-            }
-          />
-          <Route
-            path="/browse"
-            element={
-              <ProtectedRoute user={user}>
-                <Browse />
-              </ProtectedRoute>
-            }
-          /> */}
-          <Route path="/browse" element={<Browse />} />
-          <Route path="*" element={<Error />} />
+          <Route path={ROUTES.HOME} element={<HomePage />} />
+          <Route path={ROUTES.SIGN_IN} element={<SignIn />} />
+          <Route path={ROUTES.SIGN_UP} element={<SignUp />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/room/:roomID" element={<Room />} />
+          <Route path="/stream" element={<Stream />} />
+          <Route path={ROUTES.BROWSE} element={<BrowsePage />} />
         </Routes>
       </Router>
     </div>
   );
-};
+}
 
 export default App;

@@ -10,21 +10,21 @@ export const bannerMovieRequests = {
 export const mediaRequests = [
   {
     rowId: 1,
-    category: "PRIME ORIGINALS",
+    category: "Prime ORIGINALS",
     type: "tv",
     url: `/discover/tv?api_key=${API_KEY}&with_networks=213`,
   },
   {
     rowId: 2,
-    category: "Trending Movies",
+    category: "Our Trendings Showcase",
     type: "movie",
-    url: `/trending/movie/week?api_key=${API_KEY}&append_to_response=videos`,
+    url: `http://127.0.0.1:5000/predict`,
   },
   {
     rowId: 3,
-    category: "Top Rated Movie",
+    category: "Recommendation Based on Cart",
     type: "movie",
-    url: `/movie/top_rated?api_key=${API_KEY}&language=en-US`,
+    url: `http://192.168.137.185:8082/predict`,
   },
   {
     rowId: 4,
@@ -103,5 +103,17 @@ export const mediaRequests = [
     category: "Westerns",
     type: "movie",
     url: `/discover/movie?api_key=${API_KEY}&with_genres=37`,
+  },
+  {
+    rowId: 17,
+    category: "Trending Movies",
+    type: "movie",
+    url: `/trending/movie/week?api_key=${API_KEY}&append_to_response=videos`,
+  },
+  {
+    rowId: 18,
+    category: "Top Rated Movie",
+    type: "movie",
+    url: `/movie/top_rated?api_key=${API_KEY}&language=en-US`,
   },
 ];

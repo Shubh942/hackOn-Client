@@ -2,6 +2,10 @@ import Firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
 
+import "firebase/app";
+import "firebase/auth";
+import "firebase/firestore";
+
 const firebaseConfig = {
   apiKey: "AIzaSyDlpwNZQ8S8yghH5OUEdvkJM_6BPtzljt4",
   authDomain: "video-chat-5d3ea.firebaseapp.com",
@@ -13,4 +17,4 @@ const firebaseConfig = {
 
 const firebase = Firebase.initializeApp(firebaseConfig);
 
-export { firebase };
+export default { firebase };

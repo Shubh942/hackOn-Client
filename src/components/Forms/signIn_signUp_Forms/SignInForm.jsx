@@ -1,10 +1,12 @@
 import { useContext, useState } from "react";
-import { Button, FloatingLabel, Form } from "react-bootstrap";
+import { FloatingLabel, Form } from "react-bootstrap";
 import { FirebaseContext } from "../../../context/firebase";
 import { Link, useNavigate } from "react-router-dom";
+import * as ROUTES from "../../../constants/routes";
 import "./index.scss";
 
-const SignInForm = () => {
+export default function SignInForm() {
+  //navigate = useHistory
   const navigate = useNavigate();
   const { firebase } = useContext(FirebaseContext);
 
@@ -22,7 +24,7 @@ const SignInForm = () => {
       .signInWithEmailAndPassword(emailAddress, password)
       .then(() => {
         //push to the browse page
-        navigate("./browse");
+        navigate(ROUTES.BROWSE);
       })
       .catch((error) => {
         setEmailAddress("");
@@ -62,9 +64,14 @@ const SignInForm = () => {
             onChange={({ target }) => setPassword(target.value)}
           />
         </FloatingLabel>
-        <Button disabled={isInvalid} type="submit">
+        <Link
+          to="/browse"
+          disabled={isInvalid}
+          type="submit"
+          className="btn-signin"
+        >
           Sign In
-        </Button>
+        </Link>
       </Form>
 
       {error && (
@@ -74,11 +81,9 @@ const SignInForm = () => {
       )}
       <div className="bottom-container">
         <p className="signInText">
-          Already a user? <Link to="/signup">Sign up now.</Link>
+          Already a user? <Link to={ROUTES.SIGN_UP}>Sign up now.</Link>
         </p>
       </div>
     </div>
   );
-};
-
-export default SignInForm;
+}
