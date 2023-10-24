@@ -1,12 +1,12 @@
 import "./App.scss";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home, Error, Browse, Login, Signup } from "./pages/index";
+import { Home, Error, Browse } from "./pages/index";
 // import { ProtectedRoute, UserSignedIn } from "./helpers";
 
-import useAuthListener from "./hooks";
+// import useAuthListener from "./hooks";
 
 const App = () => {
-  const { user } = useAuthListener();
+  // const { user } = useAuthListener();
 
   return (
     <div className="App">
@@ -27,6 +27,14 @@ const App = () => {
               <UserSignedIn user={user}>
                 <Signup />
               </UserSignedIn>
+            }
+          />
+          <Route
+            path="/browse"
+            element={
+              <ProtectedRoute user={user}>
+                <Browse />
+              </ProtectedRoute>
             }
           /> */}
           <Route path="/browse" element={<Browse />} />

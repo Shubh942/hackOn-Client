@@ -1,5 +1,5 @@
 import { Container, Nav, Navbar } from "react-bootstrap/";
-import delta from "../../assets/Delta.png";
+import delta from "../../assets/deltalogo.png";
 
 const HeaderNav = () => {
   return (
