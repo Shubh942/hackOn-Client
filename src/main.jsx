@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
+import "./styles/main.scss";
 import { firebase } from "./services/firebase";
 import { FirebaseContext } from "./context/firebase.js";
 
