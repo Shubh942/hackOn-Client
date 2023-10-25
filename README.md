@@ -34,6 +34,7 @@ With these features, Delta not only addresses the core problems of content overl
 - CSS
 - SCSS
 - React.js
+- Firebase
 - Flask
 - PyTorch
 - SKlearn
@@ -134,3 +135,19 @@ python collaborative_filtering.py
 ```
 
 Now the ML model is ready for use
+
+## Site images
+![image](https://github.com/rajutkarsh07/hackOn-Client/assets/49344502/bf4791f6-36cc-4497-9b2d-014ffe7e362c)
+![image](https://github.com/rajutkarsh07/hackOn-Client/assets/49344502/5d3b7158-0edb-4694-8cc0-095df7fda995)
+![image](https://github.com/rajutkarsh07/hackOn-Client/assets/49344502/74266cbc-8858-4f71-8a3d-f1fe1c5109fa)
+![image](https://github.com/rajutkarsh07/hackOn-Client/assets/49344502/fa4c8317-d81a-489c-b44e-e3f1f8e2834c)
+![image](https://github.com/rajutkarsh07/hackOn-Client/assets/49344502/216a0880-d9ea-4d7b-8325-61294f83732a)
+![image](https://github.com/rajutkarsh07/hackOn-Client/assets/49344502/10a8886a-6ad7-40bd-a96d-e5c62b52babd)
+![image](https://github.com/rajutkarsh07/hackOn-Client/assets/49344502/0468cfb0-ea75-4efd-9b62-958045e503f7)
+![image](https://github.com/rajutkarsh07/hackOn-Client/assets/49344502/0c6b37b2-49ee-421f-a515-edb59f07034f)
+![image](https://github.com/rajutkarsh07/hackOn-Client/assets/49344502/b40eaff5-7fa4-4d8c-917a-03fd73fa9e4f)
+
+
+
+
+
