@@ -66,3 +66,71 @@ With these features, Delta not only addresses the core problems of content overl
 - [ ]  AI Chatbots: Implementing AI chatbots for user assistance and engagement.
 
 - [ ]  User-Generated Content: Allowing users to contribute and share their own content recommendations.
+
+### Installation
+
+To install the project, first make sure you have Node.js and npm installed on your system. Then, clone the repository and run the following command:
+
+first Fork this repo or directly clone this repo
+```
+git clone https://github.com/<username>/hackOn-Client.git
+```
+
+go to the project repository
+```
+cd hackOn-Client
+```
+
+Install all the required dependencies.
+```
+npm i 
+```
+
+### Usage
+
+To run the project, use the following command:
+
+```
+npm run dev
+```
+
+This will start a development server, and you will be able to view the website on your browser at http://localhost:5173.
+
+### Installation of ML Model
+First go to https://github.com/soham2312/recommendation
+
+clone this repo using the command
+
+```
+git clone https://github.com/<username>/recommendation.git
+```
+
+go to the project repository
+```
+cd recommendation
+```
+
+install all the dependencies
+```
+pip install -r .\requirements.txt
+pip install flask_cors
+pip install scikit-learn
+```
+
+Now go to each of the directories and run the python file in each directory
+```
+cd Average Weights
+python average_weighting.py
+```
+
+```
+cd Cart Recommendation
+python cart_recommendation.py
+```
+
+```
+cd Collaborative Filtering
+python collaborative_filtering.py
+```
+
+Now the ML model is ready for use
